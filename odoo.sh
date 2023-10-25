@@ -92,7 +92,7 @@ if [ $IS_ENTERPRISE = "True" ]; then
         mkdir -p $OE_INSTALL_DIR/enterprise/addons
 
         echo -e "\n---- Adding Enterprise code under $OE_HOME/enterprise/addons ----"
-        git clone --depth 1 --branch $OE_VERSION https://www.github.com/odoo/enterprise "$OE_INSTALL_DIR/enterprise/addons"
+        git clone --depth 1 --branch $OE_VERSION https://www.github.com/contaura/enterprise "$OE_INSTALL_DIR/enterprise/addons"
     fi
 fi
 if [ ! -d "$OE_INSTALL_DIR/all_addons" ]; then
